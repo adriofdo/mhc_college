@@ -1,0 +1,84 @@
+/* assets/css/style.css */
+
+/* Smooth page transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global font smoothing */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navbar hover underline effect */
+nav a {
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* Hero section animation */
+.hero {
+  animation: fadeIn 1.2s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button enhancements */
+button,
+a.button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover,
+a.button:hover {
+  transform: scale(1.03);
+}
+
+/* Card shadows */
+.card {
+  @apply bg-white p-6 rounded shadow hover:shadow-lg transition-shadow;
+}
+
+/* Footer styling */
+footer {
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+}
+
+/* Responsive image cleanup */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Custom headings */
+h1, h2, h3 {
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+/* Contact form */
+form input,
+form textarea {
+  @apply border border-gray-300 p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+form button {
+  @apply bg-blue-600 text-white px-4 py-2 rounded mt-2;
+}
+form button:hover {
+  @apply bg-blue-700;
+}
+
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses - MHC English College</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .step::before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background-color: #3b82f6;
+      border-radius: 50%;
+      left: -33px;
+      top: 5px;
+    }
+    .step:hover {
+      background-color: #ebf8ff;
+      transform: translateX(4px);
+      transition: all 0.3s ease-in-out;
+    }
+    .program-box:hover {
+      background: linear-gradient(135deg, #e0f2fe, #f0fdf4);
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold">MHC English</a>
+    <ul class="flex gap-4">
+      <li><a href="index.html" class="hover:underline">Home</a></li>
+      <li><a href="courses.html" class="hover:underline">Courses</a></li>
+      <li><a href="about.html" class="hover:underline">About</a></li>
+      <li><a href="contact.html" class="hover:underline">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Courses Section -->
+  <section class="py-16 px-6">
+    <h1 class="text-4xl font-extrabold text-center text-blue-800 mb-12">Our Courses</h1>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="bg-white p-8 shadow rounded text-center program-box transition-all">
+        <h2 class="text-2xl font-semibold text-blue-700 mb-2">Starters</h2>
+        <p>Beginner English for young learners aged 6–8, focused on fun and participation.</p>
+      </div>
+      <div class="bg-white p-8 shadow rounded text-center program-box transition-all">
+        <h2 class="text-2xl font-semibold text-purple-700 mb-2">Movers & Flyers</h2>
+        <p>Intermediate progression for ages 8–12, building strong listening and speaking skills.</p>
+      </div>
+      <div class="bg-white p-8 shadow rounded text-center program-box transition-all">
+        <h2 class="text-2xl font-semibold text-green-700 mb-2">Intermediate & Advanced</h2>
+        <p>Preparation for Cambridge KET, PET and FCE certifications with academic fluency.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cambridge Pathway -->
+  <section class="py-16 px-6 bg-gradient-to-r from-blue-50 to-white">
+    <h2 class="text-4xl font-extrabold text-center text-blue-900 mb-12">Cambridge English Exam Pathway</h2>
+    <div class="max-w-4xl mx-auto">
+      <ol class="relative border-l-4 border-blue-500 pl-10">
+        <li class="mb-12 pl-4 relative step bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-bold text-blue-700">Beginner</h3>
+          <p class="text-gray-700 mt-2">Basic English for daily needs. Responds to simple directions.<br><strong>Option on Completion:</strong> STARTERS, MOVERS, FLYERS</p>
+        </li>
+        <li class="mb-12 pl-4 relative step bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-bold text-purple-700">Intermediate</h3>
+          <p class="text-gray-700 mt-2">Conversational English with accuracy and fluency.<br><strong>Option on Completion:</strong> KET & PET</p>
+        </li>
+        <li class="pl-4 relative step bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-bold text-green-700">Advanced</h3>
+          <p class="text-gray-700 mt-2">Fluent English usage in academic and social settings.<br><strong>Option on Completion:</strong> FCE</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Key Language Skills -->
+  <section class="py-20 px-6 bg-white">
+    <h2 class="text-4xl font-bold text-center text-blue-800 mb-10">Key Language Skills</h2>
+    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+      <div class="bg-blue-50 p-6 shadow rounded">
+        <h3 class="text-xl font-bold mb-2">Language (English)</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Pre-writing Strokes</li>
+          <li>Capital Letters ‘A–Z’</li>
+          <li>Sentence Structure</li>
+          <li>Vocabulary Building</li>
+        </ul>
+      </div>
+      <div class="bg-green-50 p-6 shadow rounded">
+        <h3 class="text-xl font-bold mb-2">Numbers</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Pre-Math Concepts</li>
+          <li>Numbers (1–20)</li>
+          <li>Shapes</li>
+          <li>Colours</li>
+        </ul>
+      </div>
+      <div class="bg-yellow-50 p-6 shadow rounded">
+        <h3 class="text-xl font-bold mb-2">General Awareness</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Myself</li>
+          <li>Seasons</li>
+          <li>Transport</li>
+          <li>Fruits</li>
+          <li>Vegetables</li>
+          <li>Animals</li>
+        </ul>
+      </div>
+      <div class="bg-pink-50 p-6 shadow rounded">
+        <h3 class="text-xl font-bold mb-2">Other Activities</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Story Telling</li>
+          <li>Picture Reading</li>
+          <li>Environmental Science</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-blue-700 text-white text-center py-6 mt-10">
+    &copy; 2025 MHC English College | Brescia, Vicenza, Padova & Parma (Marzolara)
+  </footer>
+
+</body>
+</html>
